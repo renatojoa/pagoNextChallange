@@ -10,36 +10,89 @@
 
 *a) 230000,232425,232460*
 
-*b) 0,232425,232460,240000*
+*b) 0,232425,232460,240000* 
 
 *c) 232425,232460*
 
-*d) 232424,232425,232459,232460,232461*
+*d) 232424,232425,232459,232460,232461* (Correto) :heavy_check_mark:
 
+Justificativa:
+
+a) Estes 3 bins fornecidos garantem uma boa qualidade do está abaixo do range fornecido (232425 a 232460), sendo assim nao cobre os creterios minimos para a garantia da funcionalidade.
+
+b) 0, 232425, 232460, 240000 - Esses bins cobrem os requisitos, casos como limite inferior, um bin dentro do range e limite superior, além de um bin fora do range. Isso ajuda a garantir que a lógica de aceitação dos bins esteja correta porem e importante validar faixas dentre o limite.
+
+c) 232425, 232460 - Esses bins testam especificamente os limites inferior e superior do range. porem nao garante a funcionalidade como descrita.
+
+d) 232424, 232425, 232459, 232460, 232461 - Este conjunto inclui bins fornecem uma garantia da qualidade visto que validamos:
+-  a negativa dos bins 232424 e  232461.
+-  o positivo dos limites 232425 e 232460.
+-  e validamos que o bin 232459 esta entre os limites tambem sao aceitos
+  
 ---
 
 ### 3. Abordagem de Desenvolvimento Ágil
-Cite uma abordagem de desenvolvimento ágil e explique-a em suas palavras.
+**Cite uma abordagem de desenvolvimento ágil e explique-a em suas palavras.**
+
+Uma abordagem de desenvolvimento ágil é o Scrum, e o framework que mais tenho afinidade em projetos ageis em que consiste no trabalho é dividido em iterações chamadas sprints, que geralmente têm uma duração media de 2 semanas e tem sua atuacao em melhorias continua em periodos curtos (sprints) O Scrum é muito adaptativo, permitindo ajustes ao longo do tempo com base no feedback recebido durante as revisões e retrospectivas da sprint, o que agrega bastante na construcao de produtos e melhoria na performace do time e suas rotinas. alem tambem de promover um ambiente com extrema colaborativo e com alta transparência com os stakeholders
+
 
 ---
 
 ### 4. CI/CD
 **O que é CI/CD?**
 
+CI/CD é a sigla para Integração Contínua/Entrega Contínua. É uma prática  no desenvolvimento de software que visa automatizar e assim agilizar o todo o processo de de entrega do sotfware, teste e entrega de software, atuando em gerenciamento de deploys a resultados de testes. essa pratica garante uma estabilidade ainda maior para processos que tende-se a ocorrer falhas quando executado manual. 
+
 ---
 
 ### 5. TDD, BDD e ATDD
 **O que é TDD, BDD e ATDD, e quando são aplicadas?**
 
+*TDD:*
+
+- TDD é uma abordagem de desenvolvimento de software em que os testes automatizados são escritos antes do código de implementação. depois quando necessario ajusta o código para fazer o teste adequarce ao codigo final. o TDD é frequentemente usado em times que visam primariamente a atuacao em testes automatizados visando a atuacao anteciapada da cobertuda de testes. 
+
+*BDD:*
+
+- BDD é uma prática de descrever o comportamento esperado do software em termos de cenários compreensíveis. Os cenários são escritos em linguagem simples e podem ser aplicados convertidos em testes automatizados. O BDD é aplicado para melhorar a comunicação entre produto e a equipes de desenvolvimento.
+
+*ATDD:*
+
+- ATDD é uma prática de desenvolvimento em que os testes de aceitação são escritos antes da implementação e geralmente escritos junto com todos os envolvidos no time de desenvolvimento. o ATDD é frequentemente aplicado quando é crucial ter uma compreensão clara dos critérios de aceitação.
 ---
 
 ### 6. Heurísticas de Testes
 **Cite uma heurística de testes utilizada para testes de front-end e de back-end e explique-as.**
 
+- Heurística: "Processamento de Transações"
+
+  - Front-end: Verificar se a interface de usuário fornece feedback claro e instantâneo durante o processo de pagamento. Garantir que os usuários recebam confirmações visuais e fisicas adequadas, e que os erros ou falhas sejam comunicados de maneira compreensível.
+  - Exemplo de Aplicação:
+    - Testar o fluxo de pagamento, verificando se todos os elementos da interface (botões, campos, mensagens) estão funcionando corretamente.
+
+  - Back-end: Validar se as transações são processadas corretamente no lado do servidor. Isso inclui verificar se os dados da transação são registrados com precisão no banco de dados, se as lógicas de desconto, taxas e cálculos financeiros estão corretas ou se as transações são seguras e conformes com regulamentações.
+  - Exemplo de Requisicao:
+    - Simular falhas de pagamento para garantir que a aplicação lida adequadamente com erros, fornecendo mensagens claras aos usuários. e se os registros de transações no banco de dados refletem com precisão as transações realizadas pelos usuários.
+
 ---
 
 ### 7. Ferramentas de Testes Automatizados
 **Cite ferramentas de testes automatizados para Desktop, Web, API´s e mobile.**
+
+- **Desktop**:
+Selenium
+
+-  **Web**:
+Selenium,
+WebDriverIO
+
+- **API's**:
+Postman,
+Rest Assured
+
+- **Mobile**:
+Appium
 
 ---
 
