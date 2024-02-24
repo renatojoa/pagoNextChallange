@@ -71,7 +71,7 @@ CI/CD é a sigla para Integração Contínua/Entrega Contínua. É uma prática 
   - Exemplo de Aplicação:
     - Testar o fluxo de pagamento, verificando se todos os elementos da interface (botões, campos, mensagens) estão funcionando corretamente.
 
-  - Back-end: Validar se as transações são processadas corretamente no lado do servidor. Isso inclui verificar se os dados da transação são registrados com precisão no banco de dados, se as lógicas de desconto, taxas e cálculos financeiros estão corretas ou se as transações são seguras e conformes com regulamentações.
+  - Back-end: Validar se as transações são processadas corretamente no lado do servidor. Isso inclui verifricar se os dados da transação são registrados com precisão no banco de dados, se as lógicas de desconto, taxas e cálculos financeiros estão corretas ou se as transações são seguras e conformes com regulamentações.
   - Exemplo de Requisicao:
     - Simular falhas de pagamento para garantir que a aplicação lida adequadamente com erros, fornecendo mensagens claras aos usuários. e se os registros de transações no banco de dados refletem com precisão as transações realizadas pelos usuários.
 
