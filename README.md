@@ -111,6 +111,37 @@ Appium
 
 #### Observações
 - Enviar o link do código no GitHub.
+# Documentação de Execução de Teste
+
+
+## Configurações Necessarias
+
+Antes de executar os testes, certifique-se de ter as seguintes configurações:
+
+- Java JDK instalado
+- Maven instalado
+- Git instalado
+- Ambiente de Desenvolvimento configurado
+
+### * Clonar o Repositório *
+
+1. Clone o repositório para o seu ambiente local:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
+### * Acessar a pasta do projeto *
+
+2. Ainda no terminal acesse a pasta do projeto 
+
+  ```bash
+   cd pagoNextChallange
+
+### * Executando o teste *
+3. Rode o seguinte comando 
+
+  ```bash
+   mvn test
 
 ---
 
