@@ -134,13 +134,13 @@ Antes de executar os testes, certifique-se de ter as seguintes configurações:
 
 2. Ainda no terminal acesse a pasta do projeto 
 
-  ```bash
+    ```bash
    cd pagoNextChallange
 
 ### * Executando o teste *
 3. Rode o seguinte comando 
 
-  ```bash
+    ```bash
    mvn test
 
 ---
