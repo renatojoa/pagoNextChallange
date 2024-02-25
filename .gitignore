@@ -1,0 +1,12 @@
+# .gitignore
+
+# Ignorar a pasta target/
+target/
+
+# Ignorar a pasta .vscode/
+.vscode/
+
+# Ignorar arquivos específicos do Eclipse
+.classpath
+.project
+.settings/
